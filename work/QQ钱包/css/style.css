@@ -1,0 +1,485 @@
+html{
+	font-size: 100px;
+}
+body{
+	margin: 0;
+	background: #14110f;
+	font-size: 0.01rem;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+
+.section{
+	background: url(../imgs/bg.png) no-repeat top left;
+	background-size: cover;
+	width: 7.5rem;
+	/*height: 11.36rem;*/
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+.section .logo{
+	margin-top: 0.62rem;
+	text-align: center;
+	
+}
+.section .logo img{
+	width: 1.56rem;
+	height: 0.38rem;
+	
+}
+.section.active .logo{
+	 -webkit-animation: fadeInUp 1s 0.3s both;
+	 animation: fadeInUp 1s 0.3s both;
+	 -ms-animation: fadeInUp 1s 0.3s both;
+}
+.page1 .banner{
+	margin-top: 0.23rem;
+	text-align: center;
+}
+.page1 .banner img{
+	width: 4.7rem;
+	height: 3.63rem;
+}
+.page1.active .banner{
+	 -webkit-animation: fadeInUp 1s 0.4s both;
+	 animation: fadeInUp 1s  0.4s both;
+	 -ms-animation: fadeInUp 1s  0.4s both;
+}
+
+.page1 .list{
+	background: url(../imgs/page1-line.png) repeat-y 3.75rem;
+	background-size: 0.01rem 3.75rem;
+	height: 4.09rem;
+	margin-top: 0.49rem; 
+}
+.page1 .list ul{
+	margin: 0;
+	padding: 0;
+	margin-left: 3.75rem;
+}
+.page1 .list li{
+	list-style: none;
+	height: 0.97rem;
+	width: 3.75rem;
+	position: relative;
+}
+
+.page1.active .list li:nth-child(1){
+	 -webkit-animation: fadeInRight 1.4s 0.6s both;
+	 animation: fadeInRight 1.4s 0.6s both;
+	 -ms-animation: fadeInRight 1.4s 0.6s both;
+}
+
+.page1.active .list li:nth-child(2){
+	 -webkit-animation: fadeInLeft 1.4s 0.7s both;
+	 animation: fadeInLeft 1.4s 0.7s both;
+	 -ms-animation: fadeInLeft 1.4s 0.7s both;
+}
+.page1.active .list li:nth-child(3){
+	 -webkit-animation: fadeInRight 1.4s 0.8s both;
+	 animation: fadeInRight 1.4s 0.8s both;
+	 -ms-animation: fadeInRight 1.4s 0.8s both;
+}
+.page1.active .list li:nth-child(4){
+	 -webkit-animation: fadeInLeft 1.4s 0.9s both;
+	 animation: fadeInLeft 1.4s 0.9s both;
+	 -ms-animation: fadeInLeft 1.4s 0.9s both;
+}
+.page1.active .list li:nth-child(5){
+	 -webkit-animation: fadeInRight 1.4s 1s both;
+	 		 animation: fadeInRight 1.4s 1s both;
+	     -ms-animation: fadeInRight 1.4s 1s both;
+}
+.page1 .list .dot{
+	background: url(../imgs/img10.png) no-repeat;
+	background-size: 0.25rem 0.25rem;
+	width: 0.25rem;
+	height: 0.25rem;
+	position: absolute;
+	left: -0.12rem;
+	top: 0;
+	
+	
+}
+.page1 .list .txt{
+	margin-left: 0.39rem;
+}
+.page1 .list .txt h4{
+	
+	font-size: 0.24rem;
+	color: #b99c63;
+	font-weight: lighter;
+	
+}
+.page1 .list .txt h3{
+	
+	font-size: 0.24rem;
+	color: #b99c63;
+	
+}
+.page1 .list .txt h5{
+	font-size: 0.2rem;
+	color: #96896e;
+	font-weight: lighter;
+}
+
+
+.page1 .arrow{
+	margin-top: 0.61rem;
+	text-align: center;
+	
+	
+}
+.page1 .arrow img{
+	width: 0.6rem;
+	height: 0.6rem;
+	
+	
+}
+
+.page1.active .arrow{
+	 -webkit-animation: bounce-up 1s 0.8s linear infinite;
+	 	     animation: bounce-up 1s 0.8s linear infinite;
+	     -ms-animation: bounce-up 1s 0.8s linear infinite;
+}
+@keyframes bounce-up{
+	25% {
+        transform: translateY(0.08rem);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-0.08rem);
+    }
+}
+@-webkit-keyframes bounce-up{
+	25% {
+        transform: translateY(0.08rem);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-0.08rem);
+    }
+}
+
+.page1 .list li:nth-child(even){
+	margin-left: -3.75rem;
+	
+}
+.page1 .list li:nth-child(even) .dot{
+	left: auto;
+	right: -0.12rem;
+}
+.page1 .list li:nth-child(even) .txt{
+	text-align: right;
+	margin-right: 0.38rem;
+	
+}
+
+/*页面1*/
+
+/*.page2{
+	background: url(../imgs/bg.png) no-repeat top left;
+	width: 750px;
+	height: 1136px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}*/
+
+/*.page2 .logo{
+	margin-top: 64px;
+	text-align: center;
+	
+}
+.page2.active .logo{
+	 -webkit-animation: fadeInUp 1s 0.3s both;
+	 animation: fadeInUp 1s 0.3s both;
+	 -ms-animation: fadeInUp 1s 0.3s both;
+}*/
+.page2 .banner{
+	margin-top: 0.23rem;
+	text-align: center;
+}
+.page2 .banner img{
+	width: 4.65rem;
+	height: 2.34rem;
+}
+.page2.active .banner{
+	 -webkit-animation: fadeInUp 1s 0.4s both;
+	 animation: fadeInUp 1s  0.4s both;
+	 -ms-animation: fadeInUp 1s  0.4s both;
+}
+.page2 .list{
+	margin-top: 0.81rem;
+	margin-left: 0.92rem;
+	
+	
+}
+.page2 .list ul{
+	margin: 0;
+	padding: 0;
+	height: auto;
+	overflow: hidden;
+	
+}
+
+.page2 .list li{
+	float: left;
+	list-style: none;
+	width: 1.58rem;
+	height: 1.58rem;
+	margin-right: 0.45rem;	
+	margin-bottom: 0.28rem;
+	display:block;
+	
+}
+.page2 .list li img{
+	width: 1.58rem;
+	height: 1.58rem;
+	
+}
+.page2.active .list li:nth-child(1){
+	 -webkit-animation: zoomIn 1s 0.4s both;
+	 		 animation: zoomIn 1s 0.4s both;
+	     -ms-animation: zoomIn 1s 0.4s both;
+}
+.page2.active .list li:nth-child(2){
+	 -webkit-animation: zoomIn 1s 0.6s both;
+	 		 animation: zoomIn 1s 0.6s both;
+	     -ms-animation: zoomIn 1s 0.6s both;
+}
+.page2.active .list li:nth-child(3){
+	 -webkit-animation: zoomIn 1s 0.8s both;
+	 		 animation: zoomIn 1s 0.8s both;
+	     -ms-animation: zoomIn 1s 0.8s both;
+}
+.page2.active .list li:nth-child(4){
+	 -webkit-animation: zoomIn 1s 1s both;
+	 		 animation: zoomIn 1s 1s both;
+	     -ms-animation: zoomIn 1s 1s both;
+}
+.page2.active .list li:nth-child(5){
+	 -webkit-animation: zoomIn 1s 1.2s both;
+	 		 animation: zoomIn 1s 1.2s both;
+	     -ms-animation: zoomIn 1s 1.2s both;
+}
+.page2.active .list li:nth-child(6){
+	 -webkit-animation: zoomIn 1s 1.4s both;
+	 		 animation: zoomIn 1s 1.4s both;
+	     -ms-animation: zoomIn 1s 1.4s both;
+}
+.page2.active .list li:nth-child(7){
+	 -webkit-animation: zoomIn 1s 1.6s both;
+	 		 animation: zoomIn 1s 1.6s both;
+	     -ms-animation: zoomIn 1s 1.6s both;
+}
+.page2.active .list li:nth-child(8){
+	 -webkit-animation: zoomIn 1s 1.8s both;
+	 		 animation: zoomIn 1s 1.8s both;
+	     -ms-animation: zoomIn 1s 1.8s both;
+}
+.page2.active .list li:nth-child(9){
+	 -webkit-animation: zoomIn 1s 2s both;
+	 		 animation: zoomIn 1s 2s both;
+	     -ms-animation: zoomIn 1s 2s both;
+}
+.page2 .arrow{
+	margin-top: 0.26rem;
+	text-align: center;	
+}
+.page2 .arrow img{
+	width: 0.6rem;
+	height: 0.6rem;
+	
+	
+}
+.page2.active .arrow{
+	 -webkit-animation: bounce-up 1s 0.8s linear infinite;
+	 	     animation: bounce-up 1s 0.8s linear infinite;
+	     -ms-animation: bounce-up 1s 0.8s linear infinite;
+}
+@keyframes bounce-up{
+	25% {
+        transform: translateY(0.08rem);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-0.08rem);
+    }
+}
+@-webkit-keyframes bounce-up{
+	25% {
+        transform: translateY(0.08rem);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-0.08rem);
+    }
+}
+/*页面二*/
+/*.page3{
+	background: url(../imgs/bg.png) no-repeat top left;
+	width: 750px;
+	height: 1136px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}*/
+
+/*.page3 .logo{
+	margin-top: 64px;
+	text-align: center;
+	
+}
+.page3.active .logo{
+	 -webkit-animation: fadeInUp 1s 0.3s both;
+	 animation: fadeInUp 1s 0.3s both;
+	 -ms-animation: fadeInUp 1s 0.3s both;
+}*/
+.page3 .banner{
+	margin-top: 0.24rem;
+	text-align: center;
+}
+.page3 .banner img{
+	width: 4.96rem;
+	height: 2.31rem;
+}
+.page3.active .banner{
+	 -webkit-animation: fadeInUp 1s 0.5s both;
+	 animation: fadeInUp 1s  0.5s both;
+	 -ms-animation: fadeInUp 1s  0.5s both;
+}
+.page3 .main{
+	margin-top: 0.9rem;
+	padding-left: 1.4rem;
+	overflow: hidden;
+	height: auto;
+}
+.page3 .lside{
+	height: 2.88rem;
+	width: 1.33rem;
+	margin-right: 0.67rem;
+	float: left;
+}
+.page3 .lside img{
+	width: 1.31rem;
+	height: 2.88rem;
+}
+.page3.active .lside{
+	 -webkit-animation: fadeInLeft 1.5s 0.4s both;
+	 		 animation: fadeInLeft 1.5s 0.4s both;
+	     -ms-animation: fadeInLeft 1.5s 0.4s both;
+}
+.page3 .main .rside{
+	width: 3.5rem;
+	height: auto;
+	margin-top: 0.8rem;
+	float: left;
+	
+}
+.page3.active .rside{
+	 -webkit-animation: fadeInRight 1.5s 0.6s both;
+	 		 animation: fadeInRight 1.5s 0.6s both;
+	     -ms-animation: fadeInRight 1.5s 0.6s both;
+}
+
+.page3 .main .rside h3{
+	line-height: 0.47rem;
+	font-size: 0.27rem;
+	color: #fced9c;
+	font-weight: lighter;
+}
+
+.page3 .main .rside strong{
+	font-weight: bold;
+}
+.page3 .list{
+	margin-top: 1.1rem;
+	margin-left: 1.16rem;
+	overflow: hidden;
+	height: auto;
+}
+.page3 .list ul{
+	
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	
+}
+.page3 .list li{
+	float: left;
+	list-style: none;
+	height: 0.78rem;
+	width: 2.42rem;
+	border: #f6cb6f solid 0.01rem;
+	font-size: 0.3rem;
+	color: #fdf098;
+	line-height: 0.78rem;
+	text-align: center;
+	margin-right: 0.4rem;
+	
+	
+}
+.page3.active .list li {
+	 -webkit-animation: fadeInUp 1.4s 0.7s both;
+	 		 animation: fadeInUp 1.4s 0.7s both;
+	     -ms-animation: fadeInUp 1.4s 0.7s both;
+}
+.page3 .list a{
+	text-decoration:none;
+	color: #947553;
+	
+}
+
+
+
+.page3 .end p{
+	
+	text-align: center;
+	color: #947553;
+	font-size: 0.24rem;
+	clear: both;
+	margin-top: 0.3rem;
+}
+
+.page3.active .end p {
+	 -webkit-animation: fadeInUp 1.4s 0.9s both;
+	 		 animation: fadeInUp 1.4s 0.9s both;
+	     -ms-animation: fadeInUp 1.4s 0.9s both;
+}
+.page3{
+	position: relative;
+}
+.page3 .float{
+	
+	
+	background: rgba(40,39,42,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	text-align: center;
+}
+.page3 .float img{
+	width: 5.4rem;
+	height: 2.19rem;
+	padding-top: 0.45rem;
+	
+	
+	
+}
+/*页面3*/

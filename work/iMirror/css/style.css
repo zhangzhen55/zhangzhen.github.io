@@ -1,0 +1,409 @@
+/*reset*/
+*{
+	margin: 0; padding: 0; border: 0; list-style: none; font-weight: normal;
+	text-decoration: none;
+}
+
+/*font*/
+@font-face {
+	font-family: "myriadultralight";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../font/myriad-set-pro_ultralight.eot");
+	src: url("../font/myriad-set-pro_ultralight.eot?#iefix") format("embedded-opentype"), url("../font/myriad-set-pro_ultralight.woff") format("woff"), url("../font/myriad-set-pro_ultralight.ttf") format("truetype")
+}
+/*@font-face {
+	font-family: "myriadThin";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../font/myriad-set-pro_thin.eot");
+	src: url("../font/myriad-set-pro_thin.eot?#iefix") format("embedded-opentype"), url("../font/myriad-set-pro_thin.woff") format("woff"), url("../font/myriad-set-pro_ultralight.ttf") format("truetype")
+}*/
+
+
+/*layout*/
+body{
+	 	background: #fff;
+	 	max-width: 100%;
+	 	font-family: "myriadultralight";
+}
+img{
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	
+}
+.page{
+	padding: 80px 0;
+}
+
+.header{
+	background: #666666;
+	border-bottom: #5e5e5e solid 1px;
+	height: 45px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	overflow: hidden;
+	
+}
+
+.header-logo{
+	height: 45px;
+	width: 60px;
+	background: url(../imgs/loge.jpg) no-repeat center;
+	display: inline-block;
+	margin:0 30px;
+}
+.header-nav{
+	display: inline-block;
+	
+}
+.header-nav ul{
+	overflow: hidden;
+	height: auto;
+}
+.header-nav li{
+	float: left;
+	
+
+}
+.header-nav li a{
+	color: #fff;
+	display: inline-block;
+	padding: 0 30px;
+	font-weight: bold;
+	line-height: 45px;
+	font-size: 16px;
+}
+.header-nav li a:hover{
+	background: #4b4b4b;
+	
+}
+.header-search{
+	height: 45px;
+	width: 45px;
+	background: url(../imgs/search.jpg) no-repeat center;
+	display: inline-block;
+	margin-left: 30px;
+}
+.header-bth{
+	display: none;
+}
+.title{
+	height: auto;
+	overflow: hidden;
+	margin-top: 46px;
+	padding: 80px 0;
+}
+.title-txt{
+	text-align: center;
+	
+}
+.title-txt h1{
+	font-size: 130px;
+	line-height:150%;
+	color: #000;
+	font-weight: bold;
+}
+.title-txt p{
+	font-size: 64px;
+	line-height: 120%;
+	color: #000;
+	/*font-weight: lighter;*/
+	
+}
+
+.banner-img{
+	height: 600px;
+	background: url(../imgs/banner.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
+
+.page1-audio ul{
+	
+	height: auto;
+	overflow: hidden;
+	padding: 0 5%;
+	
+}
+.page1-audio li{
+	height: 70px;
+	display: inline-block;
+	font-size: 32px;
+	line-height: 70px;
+	color: #36b0fa;
+
+	
+	
+}
+.page1-audio li:first-child{
+	float: left;
+}
+.page1-audio li:last-child{
+	float: right;
+}
+
+.page1-audio li a{
+	color: #36b0fa;
+	font-weight: bold;
+	display:inline-block;
+	padding-right: 70px;
+	background: url(../imgs/img1.png) no-repeat right center;
+}
+
+.page1-img{
+	padding: 3% 5%;
+	text-align: center;
+	
+}
+
+.page1-txt h3{
+	
+	font-size: 60px;
+	line-height: 150%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.page1-txt p{
+	
+	font-size: 40px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	text-align:justify;
+	/*font-weight: lighter;*/
+	padding-top: 10px;
+}
+.page1-txt a{
+	font-size: 60px;
+	color: #1b7fbe;
+	line-height: 130%;
+	display: inline-block;
+	
+}
+.page1-txt a:hover{
+	color: red;
+	
+}
+.page2{
+	background: #f5f5f5;
+	
+	
+}
+.page2-img{
+	text-align: center;
+	padding: 3% 5%;
+}
+
+.page2-txt h3{
+	font-size: 60px;
+	line-height: 120%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.page2-txt p{
+	font-size: 44px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	text-align:justify;
+	/*font-weight: lighter;*/
+	padding-top: 15px;
+}
+
+.page3-txt{
+	padding-right: 26%;
+	position: relative;
+}
+.page3-txt h3{
+	font-size: 50px;
+	line-height: 130%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	
+}
+.page3-txt p{
+	font-size: 44px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	padding-top: 15px;
+	/*letter-spacing: 2px;*/
+	/*font-weight: lighter;*/
+}
+.page3-img{
+	
+	/*height: 26%;*/
+	width: 26%;
+	border-radius: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	
+} 
+
+
+.page4{
+	background: #f5f5f5;
+	
+	
+}
+.page4-img{
+	padding: 3% 5%;
+	text-align: center;
+}
+
+.page4-txt h3{
+	font-size: 66px;
+	line-height: 150%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.page4-txt p{
+	
+	font-size: 44px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	
+	text-align:justify;
+	/*font-weight: lighter;*/
+}
+
+.page5-txt{
+	padding-left: 40%;
+	position: relative;
+	
+	
+}
+.page5-txt h3{
+	font-size: 66px;
+	line-height: 130%;
+	color: #000;
+	text-align: right;
+	font-weight: bold;
+	text-align: center;
+	
+	
+}
+.page5-txt p{
+	font-size: 38px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	padding-top: 15px;
+	/*text-align:justify;
+	letter-spacing: 2px;
+	font-weight: lighter;*/
+}
+.page5-txt a{
+	font-size: 50px;
+	line-height: 130%;
+	color: #1b7fbe;
+	display: inline-block;
+	padding-top: 15px;
+	
+}
+.page5-txt a:hover{
+	color: red;
+	
+}
+.page5-img{
+	position: absolute;
+	top: 15%;
+	left:38%;
+	margin-left: -38%;
+	width: 38%;
+
+}
+.page6{
+	background: #f5f5f5;
+	
+	
+}
+.page6-img{
+	padding: 0 5%;
+	text-align: center;
+}
+
+.page6-txt h3{
+	font-size: 66px;
+	line-height: 130%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+.page6-txt p{
+	
+	font-size: 48px;
+	line-height: 120%;
+	color: #000;
+	text-align:center;
+	/*font-weight: lighter;*/
+}
+
+.page7-img{
+	padding: 0 5%;
+	text-align: center;
+}
+
+.page7-txt h3{
+	padding-top: 20px;
+	font-size: 66px;
+	line-height: 120%;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+.page7-txt p{
+	font-size: 38px;
+	line-height: 120%;
+	color: #000;
+	text-indent:2em; 
+	text-align:justify;
+	padding-top: 15px;
+	/*font-weight: lighter;*/
+}
+.page8{
+	
+	background: #f5f5f5;
+}
+.page8-img{
+	padding: 2% 5%;
+	text-align: center;
+}
+
+.footer{
+	padding: 150px 0;
+	text-align: center;
+	
+}
+.footer h1{
+	text-align: center;
+	font-size: 160px;
+	color: #1b7fbe;
+	line-height:130%;
+	font-weight: bold;
+}
