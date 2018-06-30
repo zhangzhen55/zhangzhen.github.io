@@ -1,0 +1,1401 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>未来教育首页</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="js/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="page page1 pagebg2" id="app">
+	<div class="logo">
+		<router-link to="/home"><img src="imgs/logo.png"/></router-link>
+	</div>
+	<!--{{world}}-->
+	<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOutDown">  
+    <router-view class='router'></router-view>  
+     </transition>  
+	
+	<div class="copy">
+		{{copy}}
+	</div>
+	
+	<div class="nav">
+		<ul>
+			<li><router-link to="/home"><img src="imgs/rou-1.jpg"/></router-link></li>
+			<li><router-link to="/about"><img src="imgs/rou-2.jpg"/></router-link></li>
+			<li><router-link to="/cultrue"><img src="imgs/rou-3.jpg"/></router-link></li>
+			<li><router-link to="/contact"><img src="imgs/rou-4.jpg"/></router-link></li>
+		</ul>
+	</div>
+
+</div>
+<!--首页-->
+<template id="home">
+<div>
+	<div class="item">
+		<ul>
+			<li class="item-1">
+				<router-link to="/list/infant"><img src="imgs/item-1.jpg"/></router-link>
+			</li>
+			<li class="item-2">
+				<router-link to="/list/family"><img src="imgs/item-2.jpg"/></router-link>
+				
+			</li>
+			<li class="item-3">
+				<router-link to="/list/teach"><img src="imgs/item-3.jpg"/></router-link>
+			</li>
+			<li class="item-4">
+				<router-link to="/list/resource"><img src="imgs/item-4.jpg"/></router-link>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+</template>
+<template id="about">
+	
+<div>
+	
+	<div class="content mgt">
+	<div class="grow content-pd">
+		<div class="content_site">
+			当前位置：<a href="#"><span>首页</span></a>&gt;公司信息
+		</div>
+		<div class="txt base-info">
+			<br />
+			<h5>集团简介</h5>
+			<p>未来教育集团（Future Education Group，简写：FEG ）具有厚重的教育基因，在中央电化教育馆历任领导的支持下，依托二十年服务教育体制内一线教学的资源积淀、教育教学研究成果与自主研发的人工智能测评技术，从教育部主管的《中国信息技术教育》杂志社发展为教学理论与应用研究以及专注于中国学生综合素质评测，专注于教育信息化和教育云平台建设与落地应用的高科技集团。获得多项资质与荣誉认定。集团旗下的《中国信息技术教育》杂志社和深圳市亚太未来教育科技发展有限公司分为政府特许服务与市场商业经营两个业务版块。</p>
+			<h5>特许服务：品牌宣传，聚焦资源</h5>
+			<p>《中国信息技术教育》杂志在中央电教馆的领导下，开展教学理论与应用研究、教育信息化实践、学校学科建设、学习资源整合、技术与产品推广、组织教学交流活动，因而得到各级领导和读者的关怀与支持，逐步发展成为当今同类期刊中发行量最多、影响力最大的一本杂志，为加快我国教育现代化进程起到了一定的推动作用。杂志社承办14届以“竞赛促学习”的NOC活动，已成为中国教育信息化的著名品牌，入选中国品牌创新发展工程。
+</p>
+			<h5>商业经营：教育信息化+教育服务</h5>
+			<p>深圳市亚太未来教育科技发展有限公司按照教育部制定的标准、规范，面对我国中小学阶段1.8亿名学生和体制内28万所学校的市场，以“教育信息化+教育服务”双轮驱动为战略目标，抓住“学习和高考”两大痛点，以教育云平台为支撑，立足校园教学，研发以人工智能测评技术为核心的“未来课堂”产品矩阵，构建了校内校外、线上线下、学校家庭和社会互通的互联网教育生态圈。基于多年积淀的庞大教学数据与人工智能测评技术研发的教育信息化和教育服务系列产品，拥有多项专利技术、注册商标和软件著作权，是优质的全服务线的教育信息化提供商。</p>
+				
+		</div>
+		<!--<div class="content_title">
+				<img src="imgs/img5-10.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+		<div class="content_listdl">
+			<dl>
+				<dt><a href="#">教学基础</a></dt>
+				<dt><a href="#">教学技巧</a></dt>
+				<dt><a href="#">教学活动</a></dt>
+				
+			</dl>
+		</div>	
+		<div class="grow-info">
+			<ul>
+				<li v-for="a in news">
+					<a href="#">
+					<div class="grow-info_img">
+						<img src="imgs/img15.jpg"/>
+					</div>
+					<div class="grow-info_txt">
+						<h3>{{a.tit}}</h3>
+						<h4>{{a.con+a.time}}</h4>
+						<p>{{a.p}}</p>
+					</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>-->
+		<!--<div class="content-pgs">
+			<ul>
+				<li class="hm"><a href="#">首页</a></li>
+				<li class="prev"><a href="#">上一页</a></li>
+				<li class="on"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><b>...</b></li>
+				<li class="next"><a href="#">下一页</a></li>
+				<li class="end"><a href="#">尾页</a></li>
+			</ul>
+			<p>共<span> 66 </span>条信息分 <span> 21 </span>页 每页显示<span> 8 </span>条 当前显示第<span> 1 </span>页</p>
+		</div>
+		-->
+	</div>
+	</div>
+</div>
+</template>
+
+<template id="contact">
+<div>
+	<div class="content mgt">
+	<div class="base content-pd">
+		<div class="content_site">
+			当前位置：<a href="#"><span>首页</span></a>&gt;联系我们
+		</div>
+		<!--<div class="base-title">
+			<h3>幼教工作者必须掌握的理论知识（上）</h3>
+			<p>作者：张珊  发布日期：2015-09-09  标签：幼儿教育</p>
+		</div>-->
+		<div class="base-info">
+			<br />
+			<h5>深圳（总部）</h5>
+			<p><br />地址：深圳市南山区科技园北区朗山路13号紫光信息港A座一楼<br />
+			邮编：518000<br />
+			电话：0755-8307 4261/4262/4263<br />
+			传真：0755-83074269
+			</p><br />
+			<center><img src="imgs/img15.png"/></center>
+		
+		</div>
+		
+	</div>
+	</div>
+</div>
+</template>
+<template id="tab1">
+<div>
+	<div class="photo-info">
+			<ul>
+				<li v-for="b in listss">
+					<div class="photo-info_img">
+						<router-link :to="'/detail/'+b.newsid">
+						<img src="imgs/img16.jpg"/>
+						<h5>{{b.title}}</h5>
+						</router-link>
+					</div>
+					<div class="photo-info_txt">
+						<p>{{b.time}}<br />
+							{{b.newsid}}<br />
+							{{b.description}}<br />
+							{{b.keywords}}<br />
+							{{b.content}}
+						</p>
+					</div>
+				</li>
+			</ul>
+	</div>
+	<div class="content-pgs">
+		<ul>
+			<li class="hm">
+				<a href="javascript:;" @click="pages(1)">首页</a>
+			</li>
+			<li class="prev">
+				<a href="javascript:;" @click="pages(curr-1)">上一页</a>
+			</li>
+			<li v-for="n in nums" v-bind:class="{on:n==curr}">
+				<a href="javascript:;" @click="pages(n)">{{n}}</a>
+			</li>
+			<li class="next">
+				<a href="javascript:;" @click="pages(curr+1)">下一页</a>
+			</li>
+			<li class="end">
+				<a href="javascript:;" @click="pages(nums)">尾页</a>
+			</li>
+		
+			<!--拼两年-->
+			<!--<li class="hm"><a href="javascript:;" @click="pages(1)">首页</a></li>
+			<li class="prev"><a href="javascript:;"@click="pages(curr-1)">上一页</a></li>
+			<li v-for="n in nums" v-bind:class="{on:n==curr}"><a href="javascript:;" @click="pages(n)">{{n}}</a></li>
+			<li class="next"><a href="javascript:;" @click="pages(curr+1)">下一页</a></li>
+			<li class="end"><a href="javascript:;" @click="pages(nums)">尾页</a></li>-->
+		</ul>
+	</div>
+</div>	
+</template>
+<template id="detail">
+	<div>
+		
+	<div class="content mgt">
+	<div class="grow content-pd">
+		<div class="content_site">
+			当前位置：<a href="#"><span>首页</span></a>&gt;{{detail.title}}
+		</div>
+		<div class="base-title">
+			<h3>{{detail.title}}</h3>
+			<p>作者：{{detail.author}}  发布日期：{{fmtDate(detail.time)}}  </p>
+		</div>
+		<div class="txt base-info">
+			<p>{{detail.content}}</p>
+				
+		</div>
+		
+	</div>
+	</div>
+	</div>
+</template>
+<template id="tab2">
+<div>
+	<div class="photo-info">
+			<ul>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="photo-info_img">
+						<a href="#">
+						<img src="imgs/img16.jpg"/>
+						<h5>小女孩</h5>
+						</a>
+					</div>
+					<div class="photo-info_txt">
+						<p>类型： 图片<br />
+							浏览：66次<br />
+							标签：<br />
+							评分：5分<br />
+							资源大小：0 B
+						</p>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+</div>	
+</template>
+<template id="cultrue">
+<div>
+	
+	<div class="content mgt">
+	<div class="photo content-pd">
+		<div class="content_site">
+			当前位置：<a href="#"><span>首页</span></a>&gt;企业文化
+		</div>
+		<!--<div class="content_title">
+				<img src="imgs/img5-15.png"/>
+				<a href="#">更多&gt;&gt;</a>
+		</div>-->
+		<div class="content_listdl">
+			<dl>
+				<dt><router-link to="/cultrue/tab1">卡通图片</router-link></dt>
+				<dt><router-link to="/cultrue/tab2">实物图片</router-link></dt>
+				
+			</dl>
+		</div>	
+		<router-view></router-view>
+		<!--<div class="content-pgs">
+			<ul>
+				<li class="hm"><a href="#">首页</a></li>
+				<li class="prev"><a href="#">上一页</a></li>
+				<li class="on"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><b>...</b></li>
+				<li class="next"><a href="#">下一页</a></li>
+				<li class="end"><a href="#">尾页</a></li>
+			</ul>
+			<p>共<span> 66 </span>条信息分 <span> 21 </span>页 每页显示<span> 8 </span>条 当前显示第<span> 1 </span>页</p>
+		</div>-->
+		
+	</div>
+	</div>
+</div>
+</template>
+
+<template id="list">
+<div>
+	<div class="menu">
+		<ul>
+			<li>
+				<router-link to="/list/infant"><img src="imgs/img4-1.png"/></router-link>
+			</li>
+			<li>
+				<router-link to="/list/family"><img src="imgs/img4-2.png"/></router-link>
+			</li>
+			<li>
+				<router-link to="/list/teach"><img src="imgs/img4-3.png"/></router-link>
+			</li>
+			<li>
+				<router-link to="/list/resource"><img src="imgs/img4-4.png"/></router-link>
+			</li>
+		</ul>
+	</div>
+	<div class="content">
+		<router-view></router-view>
+	<!--<transition leave-active-class="animated fadeOut" enter-active-class="animated fadeIn" >  
+	<router-view></router-view>
+	</transition>-->
+	<!--<transition  name="custom-classes-transition"
+    enter-active-class="animated tada"
+    leave-active-class="animated bounceOutRight">  
+	<router-view></router-view>
+	</transition>-->
+	</div>	
+</div>
+</template>
+<template id="infant">
+<div>
+	<div class="infant content-pd">
+		<div class="infant-item1 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-5.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="infant_listdl">
+				<dl>
+					<dt><router-link to="/list/infant/item1">幼儿教育快乐学习</router-link></dt>
+					<dt><router-link to="/list/infant/item2">假期空中乐园</router-link></dt>
+				</dl>
+			</div>
+			<router-view></router-view>
+			
+			
+		</div>
+		<div class="infant-item2 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-6.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="infant_listdl">
+				<dl>
+					<dt><a href="#">听故事</a></dt>
+					<dt><a href="#">看秀场</a></dt>
+					<dt><a href="#">读童书</a></dt>
+					<dt><a href="#">做游戏</a></dt>
+				</dl>
+			</div>
+			<div class="infant-item2_listul">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/img9.jpg"/>
+							<h5>手指操</h5>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img9.jpg"/>
+							<h5>手指操</h5>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img9.jpg"/>
+							<h5>手指操</h5>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="infant-item3 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-7.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="infant-item3_guide">
+				<h5><img src="imgs/img6.png"/></h5>
+				<ul>
+					<li class="on"><a href="#">小班</a></li>
+					<li><a href="#">中班</a></li>
+					<li><a href="#">大班</a></li>
+				</ul>
+			</div>
+			<div class="infant-item3_img">
+				<img src="imgs/img10.jpg"/>
+			</div>
+			<div class="infant-item3_guide">
+				<h5 class="i2"><img src="imgs/img7.png"/></h5>
+				<ul>
+					<li class="on"><a href="#">健康成长</a></li>
+					<li><a href="#">生活能力</a></li>
+					<li><a href="#">学习能力</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="infant-item4 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-8.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="infant-item4_list">
+				<ul>
+					<li>
+						<a href="#">
+						<img src="imgs/img11-1.jpg"/>
+						<h5>拓展提高</h5>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<img src="imgs/img11-2.jpg"/>
+						<h5>成长评测</h5>
+							
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+</div>
+</template>
+<template id="item1">
+	<div>
+		<div class="infant-item1_listul">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-1.jpg"/>
+							<h4>52周幼儿成长故事小班dsf15</h4>
+							<p>52周幼儿成长故事小班52周幼儿成长故事<br />小班52周幼儿...</p>
+							<span>阶段：小班  类型：幼儿用书sdgfs</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-2.jpg"/>
+							<h4>52周幼儿成长故事中班dgdf</h4>
+							<p>2周幼儿成长故事中班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：中班  类型：幼儿用书sdfs</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-3.jpg"/>
+							<h4>52周幼儿成长故事大班dsfds</h4>
+							<p>2周幼儿成长故事大班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：大班  类型：幼儿用书sdfd</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+
+
+	</div>
+</template>
+<template id="item2">
+	<div>
+		<div class="infant-item1_listul">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-1.jpg"/>
+							<h4>52周幼儿成长故事小班</h4>
+							<p>52周幼儿成长故事小班52周幼儿成长故事<br />小班52周幼儿...</p>
+							<span>阶段：小班  类型：幼儿用书</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-2.jpg"/>
+							<h4>52周幼儿成长故事中班</h4>
+							<p>2周幼儿成长故事中班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：中班  类型：幼儿用书</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-3.jpg"/>
+							<h4>52周幼儿成长故事大班</h4>
+							<p>2周幼儿成长故事大班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：大班  类型：幼儿用书</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+
+
+	</div>
+</template>
+<template id="family">
+<div>
+	
+	<div class="family content-pd">
+		<div class="family-item1 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-1.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">职场之道</a></dt>
+					<dt><a href="#">家庭之道</a></dt>
+				</dl>
+			</div>
+			<div class="content_listul">
+				<ul>
+					<li>
+						<a href="#">孩子写反字怎么办？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">怎么应对“暴力娃”？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会 </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？ </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念 </a>
+						<span>2015-09-10</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="family-item2 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-2.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">教育资讯</a></dt>
+					<dt><a href="#">常识百科</a></dt>
+					<dt><a href="#">实用工具</a></dt>
+				</dl>
+			</div>
+			<div class="content_listul">
+				<ul>
+					<li>
+						<a href="#">孩子写反字怎么办？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">怎么应对“暴力娃”？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会 </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？ </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念 </a>
+						<span>2015-09-10</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="family-item3 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-3.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">成长日志</a></dt>
+					<dt><a href="#">成长秀场</a></dt>
+					<dt><a href="#">成长活动</a></dt>
+				</dl>
+			</div>
+			<div class="content_listul">
+				<ul>
+					<li>
+						<a href="#">孩子写反字怎么办？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">怎么应对“暴力娃”？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会 </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？ </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念 </a>
+						<span>2015-09-10</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="family-item4 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-4.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="family_img">
+				<a href="#"><img src="imgs/img7.jpg"/></a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+</template>
+<template id="teach">
+<div>
+	
+	<div class="teach content-pd">
+		<div class="teach-item1 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-9.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">教学参考</a></dt>
+					<dt><a href="#">备考平台</a></dt>
+					<dt><a href="#">教学资源</a></dt>
+					<dt><a href="#">拓展活动</a></dt>
+				</dl>
+			</div>
+			<div class="infant-item1_listul">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-1.jpg"/>
+							<h4>52周幼儿成长故事小班</h4>
+							<p>52周幼儿成长故事小班52周幼儿成长故事<br />小班52周幼儿...</p>
+							<span>阶段：小班  类型：幼儿用书</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-2.jpg"/>
+							<h4>52周幼儿成长故事中班</h4>
+							<p>2周幼儿成长故事中班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：中班  类型：幼儿用书</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/img8-3.jpg"/>
+							<h4>52周幼儿成长故事大班</h4>
+							<p>2周幼儿成长故事大班52周幼儿成长故事<br />
+	中班52周幼儿...</p>
+							<span>阶段：大班  类型：幼儿用书</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div class="teach-item2 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-10.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">教学基础</a></dt>
+					<dt><a href="#">教学技巧</a></dt>
+					<dt><a href="#">教学活动</a></dt>
+				</dl>
+			</div>
+			<div class="content_listul">
+				<ul>
+					<li>
+						<a href="#">孩子写反字怎么办？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">怎么应对“暴力娃”？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会 </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？ </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念 </a>
+						<span>2015-09-10</span>
+					</li>
+				</ul>
+			</div>
+			
+		
+		</div>
+		<div class="teach-item2 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-11.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listul">
+				<ul>
+					<li>
+						<a href="#">孩子写反字怎么办？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">怎么应对“暴力娃”？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会 </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">和孩子一起与大自然亲密约会</a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">换牙会影响孩子发音吗？ </a>
+						<span>2015-09-10</span>
+					</li>
+					<li>
+						<a href="#">培养孩子的数概念 </a>
+						<span>2015-09-10</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+</template>
+<template id="resource">
+<div>
+	
+	<div class="resource content-pd">
+		<div class="resource-item1 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-12.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">声音效果</a></dt>
+					<dt><a href="#">背景音乐</a></dt>
+					<dt><a href="#">音乐欣赏</a></dt>
+					<dt><a href="#">诗词歌谣</a></dt>
+					<dt><a href="#">儿童故事</a></dt>
+				</dl>
+			</div>
+			<div class="resource-item1_listul">
+				<ul>
+					<li class="on"><a href="#">声音效果-打字机</a></li>
+					<li><a href="#">声音效果-打字机</a></li>
+					<li><a href="#">师范教师音乐欣赏-牧歌</a></li>
+					<li><a href="#">师范教师音乐欣赏-牧歌</a></li>
+					<li><a href="#">经典圣诞歌曲</a></li>
+					<li><a href="#">经典圣诞歌曲</a></li>
+					<li><a href="#">师范教师音乐欣赏-牧歌</a></li>
+					<li><a href="#">师范教师音乐欣赏-牧歌</a></li>
+					<li><a href="#">经典圣诞歌曲</a></li>
+					<li><a href="#">经典圣诞歌曲</a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div class="resource-item2 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-13.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">卡通图片</a></dt>
+					<dt><a href="#">实物图片</a></dt>
+				</dl>
+			</div>
+			<div class="resource-item2_listul">
+				<ul>
+					<li class="on"><a href="#"><img src="imgs/img12-1.jpg"/><h5>小龙女</h5></a></li>
+					<li><a href="#"><img src="imgs/img12-2.jpg"/><h5>小男孩</h5></a></li>
+					<li><a href="#"><img src="imgs/img12-3.jpg"/><h5>两栖动物</h5></a></li>
+					<li class="on"><a href="#"><img src="imgs/img12-1.jpg"/><h5>小龙女</h5></a></li>
+					<li><a href="#"><img src="imgs/img12-2.jpg"/><h5>小男孩</h5></a></li>
+					<li><a href="#"><img src="imgs/img12-3.jpg"/><h5>两栖动物</h5></a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div class="resource-item3 content-item">
+			<div class="content_title">
+				<img src="imgs/img5-13.png"/>
+				<a href="#">更多&gt;&gt;</a>
+			</div>
+			<div class="content_listdl">
+				<dl>
+					<dt><a href="#">电视片</a></dt>
+					<dt><a href="#">益智游戏</a></dt>
+					<dt><a href="#">电子绘本</a></dt>
+				</dl>
+			</div>
+			<div class="resource-item3_listul">
+				<ul>
+					<li>
+						<div class="vb">
+							<a href="#"><img src="imgs/img13-1.jpg"/></a>
+						</div>
+						<h4>快乐在一起</h4>
+					</li>
+					<li>
+						<div class="vb">
+							<a href="#"><img src="imgs/img13-2.jpg"/></a>
+						</div>
+						
+						<h4>吹画</h4>
+					</li>
+					<li>
+						<div class="vb">
+							<a href="#"><img src="imgs/img13-3.jpg"/></a>
+						</div>
+						<h4>蝉为什么要叫</h4>
+					</li>
+					<li>
+						<div class="vb">
+						<a href="#"><img src="imgs/img13-4.jpg"/></a>
+						</div>
+						<h4>蜘蛛都结网吗</h4>
+					</li>
+					<li>
+						<div class="vb">
+						<a href="#"><img src="imgs/img13-5.jpg"/></a>
+						</div>
+						<h4>蚊子吸血</h4>
+					</li>
+					<li>
+						<div class="vb">
+						<a href="#"><img src="imgs/img13-6.jpg"/></a>
+						</div>
+						<h4>为什么文字在黑暗</h4>
+					</li>
+					
+					
+				</ul>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	
+</div>
+</template>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue-router.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	new Vue({
+		el:'#app',
+		 data: {
+   			 copy: 'Copyright @ 1998-2015 futureedu all Rights Reserved 未来领航教育 版权所有 '
+  		},
+  		router: new VueRouter({
+  			routes:[
+  			{
+  				path:'',
+  				component:{
+  					template:'#home'
+  				}
+  			},
+  			{
+  				
+  				path:'/home',
+  				component:{
+  					template:'#home'
+  				}
+  			},
+  			{
+  				path:'/about',
+  				component:{
+  					data(){
+  						return{
+  							title:'arr',
+  							news:[{
+  								tit:'孩子写反字怎么办？1',
+  								con:'学习能力',
+  								time:'2015-6-12',
+  								p:'四五岁的孩子正处在书写爆发的关键期，只要环境中有文字符号的刺激...'
+  								
+  							},
+  							{
+  								tit:'孩子写反字怎么办？2',
+  								con:'学习能力',
+  								time:'2015-6-12',
+  								p:'四五岁的孩子正处在书写爆发的关键期，只要环境中有文字符号的刺激...'
+  								
+  							},
+  							{
+  								tit:'孩子写反字怎么办？3',
+  								con:'学习能力',
+  								time:'2015-6-12',
+  								p:'四五岁的孩子正处在书写爆发的关键期，只要环境中有文字符号的刺激...'
+  								
+  							}
+  							]
+  						}
+  					},
+  					template:'#about'
+  				}
+  			},
+  			{	
+				path:'/detail/:id',
+				component:{
+					template:'#detail',
+					data(){
+						return{
+							detail:[]
+						}
+					},
+					methods:{
+						//获取时间函数
+						fmtDate:function(timeStamp){
+							 var date = new Date();  
+						    date.setTime(timeStamp * 1000);  
+						    var y = date.getFullYear();      
+						    var m = date.getMonth() + 1;      
+						    m = m < 10 ? ('0' + m) : m;      
+						    var d = date.getDate();      
+						    d = d < 10 ? ('0' + d) : d;      
+						    var h = date.getHours();    
+						    h = h < 10 ? ('0' + h) : h;    
+						    var minute = date.getMinutes();    
+						    var second = date.getSeconds();    
+						    minute = minute < 10 ? ('0' + minute) : minute;      
+						    second = second < 10 ? ('0' + second) : second;     
+						    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second; 
+						}
+					},
+					created:function(){
+						var self =this;
+						var id = this.$route.params.id;
+						$.ajax({
+							type:"post",
+							url:"http://api.qietu.net/api.php?do=getNewsDetail&id="+id+"&datatype=jsonp&callback=JSON_CALLBACK",
+							dataType:"jsonp",
+							async:false,
+							success:function(msg){
+								self.detail = msg[0];
+								console.log(msg);
+							} 
+						})
+					}
+				}
+  				
+  				
+  				
+//				path:'/detail/:id',
+//				component:{
+//					template:'#detail',
+//					data(){
+//						return{
+//							detail:[]
+//						}
+//					},
+//					created:function(){
+//						var self = this;
+//						var id =this.$route.params.id;
+//						console.log(id);
+//						$.ajax({
+//							type:"post",
+//							url:"http://api.qietu.net/api.php?do=getNewsDetail&id="+id+"&datatype=jsonp&callback=JSON_CALLBACK",
+//							dataType:"jsonp",
+//							async:false,
+//							success:function(msg){
+//								self.detail = msg[0];
+//								console.log(msg);
+//							}
+//						})
+//					}
+//				}
+//				path:'/detail/:id',
+//				component:{
+//					template:'#detail',
+//					data(){
+//						return{
+//							detail:[]
+//						}
+//					},
+//					created:function(){
+//						var self = this;
+//						var id = this.$route.params.id;
+////						console.log(id);
+//						$.ajax({
+//							type:"post",
+//							url:"http://api.qietu.net/api.php?do=getNewsDetail&id=" + id + "&datatype=jsonp&callback=JSON_CALLBACK",
+//							dataType:"jsonp",
+//							async:false,
+//							success:function(msg){
+//								console.log(msg);
+//								self.detail = msg[0];
+//								
+//							},
+//							
+//						})
+//
+//					}
+//				}
+
+  			},
+  			{
+  				path:'/cultrue',
+  				component:{
+  					template:'#cultrue'
+  				},
+  				children:[
+  				{
+  					path:'',
+  					component:{
+  						data(){
+  							return{
+  								listss:[],
+  								nums:0,
+  								curr:1
+  							};
+  							
+  						},
+  						methods:{
+  							pages:function(n){
+  								
+  								if(n<=1){
+  									n=1;
+  								};
+  								if(n>this.nums){
+  									n=this.nums;
+  									
+  								};
+  								var self = this;
+  								$.ajax({
+  									type:"post",
+  									url:"http://api.qietu.net/api.php?pagesize=6&page="+n+"&datatype=jsonp&callback=JSON_CALLBACK",
+  									dataType:"jsonp",
+  									async:false,
+  									success:function(msg){
+  										self.listss=msg;
+  										self.curr = n;
+  									}
+  								})
+  							}
+  						},
+  						created:function(){
+  							var self = this;
+  							$.ajax({
+  								type:"post",
+  								url:"http://api.qietu.net/api.php?pagesize=6&page=1&datatype=jsonp&callback=JSON_CALLBACK",
+  								dataType:"jsonp",
+  								async:false,
+  								success:function(msg){
+//									console.log(msg);
+  									self.listss= msg;
+  								}
+  							});
+  							$.ajax({
+  								type:"post",
+  								url:"http://api.qietu.net/api.php?do=getNewsCount&datatype=jsonp&callback=JSON_CALLBACK",
+  								dataType:"jsonp",
+  								async:false,
+  								success:function(msg){
+//									console.log(msg);
+									self.nums = Math.ceil(msg/6);
+  								}
+  							});
+  							
+  						},
+  						template:'#tab1'
+  					}
+  				},
+  				{
+  					path:'tab1',
+  					component:{
+  						data(){
+  							
+  							return{
+  								listss:[],
+  								nums:0
+  							};
+  						},
+  						created:function(){
+							var self =this;
+  							$.ajax({
+  								type:"post",
+ 								url:"http://api.qietu.net/api.php?pagesize=6&page=1&datatype=jsonp&callback=JSON_CALLBACK",
+  								dataType:"jsonp",
+  								async:false,
+  								success:function(msg){
+  									self.listss = msg;
+  								},
+  							})
+  						},
+  						template:'#tab1'
+  					}
+  				},
+  				{
+  					path:'tab2',
+  					component:{
+  						template:'#tab2'
+  					}
+  				},
+  				]
+  			},
+  			{
+  				path:'/contact', 
+  				component:{
+  					template:'#contact'
+  				}
+  			},
+  			{
+  				path:'/list',
+  				component:{
+  					template:'#list'
+  				},
+  				children:[
+	  				{
+	  					path:'infant',
+	  					component:{
+	  						template:'#infant'
+	  					},
+	  					children:[
+	  						{
+		  						path:'',
+		  						component:{
+		  							template:'#item1'
+		  						}
+		  						
+		  					},
+	  						{
+		  						path:'item1',
+		  						component:{
+		  							template:'#item1'
+		  						}
+		  						
+		  					},
+		  					{
+		  						path:'item2',
+		  						component:{
+		  							template:'#item2'
+		  						}
+		  					}
+	  					]
+	  				},
+	  				{
+	  					path:'family',
+	  					component:{
+	  						template:'#family'
+	  					}
+	  				},
+	  				{
+	  					path:'teach',
+	  					component:{
+	  						template:'#teach'
+	  						
+	  					}
+	  				},
+	  				{
+	  					path:'resource',
+	  					component:{
+	  						template:'#resource'
+	  					}
+	  					
+	  				}
+	  				
+
+	  			
+  				]
+  			},
+  			
+  			{
+  				path:'/infant',
+  				component:{
+  					template:'#infant'
+  				}
+  			},
+  			{
+  				path:'/family',
+  				component:{
+  					template:'#family'
+  				}
+  			},
+  			{
+  				path:'/teach',
+  				component:{
+  					template:'#teach'
+  					
+  				}
+  			},
+  			{
+  				path:'/resource',
+  				component:{
+  					template:'#resource'
+  				}
+  			}
+  			
+  			
+  			]
+  		})
+  	
+		
+		
+	})
+	
+</script>
+<!--<script>
+	$(function(){
+		$('.menu li').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		})
+	})
+</script>-->
+ <!--<script type="text/babel">  
+export default {  
+  name: 'app',  
+  data(){  
+    return{  
+        transitionName: 'slide-left'  
+    }  
+  }  
+}  
+</script> -->
+</body>
+</html>
