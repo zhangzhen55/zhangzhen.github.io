@@ -128,16 +128,22 @@ html{
 	border-bottom: #ececec solid 1px;
 	
 }
+.container1 .table-box{
+	display: none;
+}
+.container1 .table-box.on{
+	display: block;
+}
 .container1 .taber-head ul{
 	height: auto;
 	overflow: hidden;
-	position: relative;
+	/*position: relative;*/
 }
 .container1 .taber-head li{
 	float: left;
 	width: 33.33%;
 	text-align: center;
-	
+	position: relative;
 	
 }
 .container1 .taber-head li a{
@@ -149,7 +155,7 @@ html{
 	display: inline-block;
 	height: 62px;
 }*/
-.container1 .taber-head ul:after{
+.container1 .taber-head li.on:after{
 	content: "";
 	background: #00A0E9;
 	width: 0.35rem;

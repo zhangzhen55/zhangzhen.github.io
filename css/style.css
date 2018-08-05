@@ -334,4 +334,12 @@ body.respond #copyright {margin: 60px auto;}
 
 body.respond #messageSent {margin-top: 20px;}
 
+ul#recommends h4 a{
+	font-size: 14px;
+	/*color: black;*/
+	text-decoration: underline;
 
+}
+ul#recommends h4 a:hover{
+	color: blue;
+}
